@@ -1,0 +1,72 @@
+.opc:hover {
+  opacity: 0.5;
+}
+
+.opc1:hover {
+  opacity: 0.4;
+}
+.scroll {
+  overflow-y: auto;
+  height: 500px;
+  padding: 20px;
+  scroll-snap-stop: always;
+  transition: 0.2s ease-in-out;
+}
+.scroll:hover {
+  box-shadow: 4px 0px 1px 1px rgba(0, 0, 0, 0.2);
+}
+html {
+  scroll-behavior: smooth;
+  /* background: linear-gradient(to bottom, #06fd1a, #0adce4); */
+}
+::-webkit-scrollbar {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.scroll:not(:hover) {
+  overflow-y: auto;
+  top: 0px;
+}
+@font-face {
+  font-family: myfont;
+  src: url(Sevillana-Regular.ttf);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: myfont;
+  letter-spacing: 1px;
+}
+
+a,p,li {
+  font-family: poppins;
+}
+@font-face {
+  font-family: poppins;
+  src: url(Poppins-ExtraLightItalic.ttf);
+}
+li {
+  text-align: center;
+}
+.bt {
+  padding: 8px;
+  background-color: rgb(11, 156, 223);
+  color: white;
+  border-radius: 4px;
+  transition: 0.2s ease-in-out;
+  border: 1px solid rgb(11, 156, 223);
+
+  
+}
+.bt:hover {
+color: rgb(11, 156, 223);
+box-shadow: 4px 4px 1px 1px rgba(0, 0, 0, 0.2);
+border: 1px solid rgb(11, 156, 223) ;
+background-color: white;
+transform: scale(1.25);
+}
